@@ -31,7 +31,7 @@
 `sudo apt-get install wps-office`
 
 ## 移除LibreOffice
-`sudo apt-get remove libreoffice`
+`sudo apt-get remove libreoffice-common`
 
 ## 安装Git
 `sudo apt-get install git`
