@@ -27,3 +27,4 @@
 
 ## 测试Docker
 `sudo docker run hello-world`
+Docker在本地未找到hello-world镜像，会从远程下载镜像。
