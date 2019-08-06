@@ -36,5 +36,5 @@
 ## 安装Git
 `sudo apt-get install git`
 
-## 安装Docker
-`sudo apt-get install docker-ce`
+## 安装Atom
+
