@@ -25,6 +25,19 @@
 `sudo apt-get install docker-ce docker-ce-cli containerd.io`
 安装成功后，会启动Docker服务。
 
+## 使用镜像加速器
+### 获取加速器地址
+进入阿里云的“容器镜像服务”，点击“镜像加速器”，即可看到供本人使用的加速器地址。
+### 配置加速器
+`sudo mkdir -p /etc/docker`
+`sudo tee /etc/docker/daemon.json <<-'EOF'`
+`{`
+  `"registry-mirrors": ["https://34eryx3n.mirror.aliyuncs.com"]`
+`}`
+`EOF`
+`sudo systemctl daemon-reload`
+`sudo systemctl restart docker`
+
 ## 测试Docker
 `sudo docker run hello-world`
 Docker在本地未找到hello-world镜像，会从远程下载镜像。
