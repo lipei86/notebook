@@ -29,6 +29,12 @@ source.list中的示例如下：
 Ubuntu 1804 --> bionic
 Ubuntu 1604 --> xenial
 
+发行版还区分了更新为何种更新，例如：
+bionic：版本更新
+bionic-updates： 主要缺陷修复更新
+bionic-backports：未经过官方严格测试的更新
+bionic-security
+
 ## 组件（Component）
 源地址格式中发行版之后的就是组件了，组件可以有多个。
 ### Debian
