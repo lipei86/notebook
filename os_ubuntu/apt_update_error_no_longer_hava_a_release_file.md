@@ -33,7 +33,7 @@ Ubuntu 1604 --> xenial
 bionic：版本更新
 bionic-updates： 主要缺陷修复更新
 bionic-backports：未经过官方严格测试的更新
-bionic-security
+bionic-security：
 
 ## 组件（Component）
 源地址格式中发行版之后的就是组件了，组件可以有多个。
