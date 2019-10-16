@@ -13,10 +13,7 @@
 `sudo apt-key fingerprint 0EBFCD88`
 
 ## 添加源
-`sudo add-apt-repository \`
-	`"deb [arch=amd64] https://download.docker.com/linux/ubuntu \`
-	`$(lsb_release -cs) \`
-	`stable"`
+`sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"`
 
 命令`lsb_release -cs`用于获取系统代号，Ubuntu 18.04的代号为bionic。
 
