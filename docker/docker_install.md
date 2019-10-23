@@ -29,12 +29,17 @@
 `sudo mkdir -p /etc/docker`
 `sudo tee /etc/docker/daemon.json <<-'EOF'`
 `{`
-  `"registry-mirrors": ["https://34eryx3n.mirror.aliyuncs.com"]`
+  `"registry-mirrors": [
+		"https://34eryx3n.mirror.aliyuncs.com"
+		, "https://docker.mirrors.ustc.edu.cn"
+		, "https://dockerhub.azk8s.cn"
+		, "https://reg-mirror.qiniu.com"]`
 `}`
 `EOF`
 `sudo systemctl daemon-reload`
 `sudo systemctl restart docker`
 
+可以通过`docker info`命令来查看镜像是否启用
 ## 测试Docker
 `sudo docker run hello-world`
 Docker在本地未找到hello-world镜像，会从远程下载镜像。

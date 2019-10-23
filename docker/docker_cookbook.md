@@ -146,6 +146,8 @@ prune命令用来清理一些遗留的临时镜像文件和没有被使用的镜
 ### 终止容器 (stop)
 使用stop命令终止容器：
 `docker [container] stop [-t|--time[=10]][CONATINER...]`
+批量停止全部容器：
+`docker container stop $(docker ps -a -q)`
 
 还可以使用kill命令发送SIGKILL信号来强行停止容器：
 `docker [container] kill <CONTAINER>`
