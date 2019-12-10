@@ -15,6 +15,9 @@ cl.exe是windowns的c++编译工具，需要安装visual studio。下载visual s
 ## 找不到 basetsd.h 
 basetsd.h是windows 10 sdk的文件，需要使用visual studio installer安装windows 10 sdk组件。
 
+## 找不到 rc.exe
+在 program files 文件夹下搜索rc.exe, 并把文件夹路径加入PATH环境变量。
+
 # 参考
 https://blog.csdn.net/zhouzixin053/article/details/102599456
 https://www.jianshu.com/p/a7963ebecbe4
