@@ -19,6 +19,14 @@ basetsd.h是windows 10 sdk的文件，需要使用visual studio installer安装w
 在 program files 文件夹下搜索rc.exe, 并把文件夹路径加入PATH环境变量。
 
 ## Python38\lib\asyncio\events.py add_reader NotImplementedError
+找到 tornado/platform/asyncio.py 文件修改，添加代码如下：
+```python
+import sys
+
+if sys.platform == 'win32':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+```
+
 
 
 # 参考
